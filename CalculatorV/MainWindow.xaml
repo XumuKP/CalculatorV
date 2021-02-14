@@ -1,0 +1,130 @@
+﻿<Window x:Class="CalculatorV.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        MaxHeight="500"
+        MinHeight="500"
+        MaxWidth="370"
+        MinWidth="370">
+
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <TextBox x:Name="TextBox"
+                 KeyDown="OnKeyDown"
+                 TextChanged="TextBox_TextChanged"
+                 Grid.Column="0"
+                 Grid.ColumnSpan="4"
+                 FontSize="30"
+                 TextAlignment="Center" FontWeight="Bold">
+        </TextBox>
+        <TextBox x:Name="answer"
+                 Grid.Row="1"
+                 Grid.Column="0"
+                 Grid.ColumnSpan="4"
+                 FontSize="30"
+                 TextAlignment="Center" FontWeight="Bold">
+        </TextBox>
+
+        <Button Grid.Column="0"
+                Grid.Row="5"
+                FontSize="20"
+                Content="1" Click="Button_Click_1" FontWeight="Bold" />
+        <Button
+                Grid.Column="1"
+                Grid.Row="5"
+                FontSize="20"
+                Content="2" Click="Button_Click_2" FontWeight="Bold"/>
+        <Button Grid.Column="2"
+                Grid.Row="5"
+                FontSize="20"
+                Content="3" Click="Button_Click_3" FontWeight="Bold" >
+        </Button>
+        <Button Grid.Column="0"
+                Grid.Row="4" 
+                FontSize="20"
+                Content="4" Click="Button_Click_4" FontWeight="Bold" >
+        </Button>
+        <Button Grid.Column="1"
+                Grid.Row="4" 
+                FontSize="20"
+                Content="5" Click="Button_Click_5" FontWeight="Bold" />
+        <Button Grid.Column="2"
+                Grid.Row="4"
+                FontSize="20"
+                Content="6" Click="Button_Click_6" FontWeight="Bold" >
+        </Button>
+        <Button Grid.Column="0"
+                Grid.Row="3"
+                FontSize="20"
+                Content="7" Click="Button_Click_7" FontWeight="Bold"/>
+        <Button Grid.Column="1"
+                Grid.Row="3"
+                FontSize="20"
+                Content="8" Click="Button_Click_8" FontWeight="Bold"/>
+        <Button 
+                Grid.Row="3"
+                Grid.Column="2"
+                FontSize="20"
+                Content="9" Click="Button_Click_9" FontWeight="Bold" />
+        <Button
+                Grid.Row="6"
+                FontSize="20"
+                Content="0" Click="Button_Click" Grid.Column="1" FontWeight="Bold" />
+        <Button Grid.Column="3"
+                FontSize="20"
+                Content="+"
+                Grid.Row="5" Click="Button_ClickP" />
+        <Button Grid.Column="3"
+                Grid.Row="4"
+                FontSize="20"
+                Content="-" Click="Button_ClickM">
+        </Button>
+        <Button Grid.Column="3"
+                Grid.Row="2"
+                FontSize="20"
+                Content="/" Click="Button_ClickR" />
+        <Button Grid.Column="3"
+                Grid.Row="3"
+                FontSize="20"
+                Content="X" Click="Button_ClickY" />
+        <Button Grid.Column="2"
+                Grid.Row="6"
+                FontSize="20"
+                Content="=" Click="Button_ClickE" Grid.ColumnSpan="2"  />
+        <Button
+                Grid.Row="6"
+                FontSize="20"
+                Content="," Click="Button_Click_Z" FontWeight="Bold" />
+        <Button  Grid.Column="1"
+                Grid.Row="2"
+                FontSize="20"
+                Content="🠔" Click="Button_Click_D" FontWeight="Bold" />
+        <Button Grid.Column="0"
+                Grid.Row="2"
+                FontSize="20"
+                Content="C" Click="Button_Click_С" FontWeight="Bold"/>
+        <Button
+                Grid.Row="2"
+                FontSize="20"
+                Content="+/-" Click="Button_Click_PM" Grid.Column="2" FontWeight="Bold"/>
+    </Grid>
+</Window>
