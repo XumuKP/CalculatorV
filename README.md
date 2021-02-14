@@ -1,2 +1,2 @@
 # CalculatorV
-Simple calculator for simple calculations on .NET Framework 3.1
+Simple calculator for simple calculations on .NET Core 3.1
